@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0c306c;
+}
+
+#navbar {
+    display: block;
+    width: 100%;
+    background-color: #0c306c;
+    border-bottom: 5px solid #FFCA05;
+}
+
+/* .navbar{
+    background-color: #0c306c !important;
+} */
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-custom {
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.icofont-navigation-menu:before {
+    content: "\efa2";
+}
+
+.navbar::after{
+    border-bottom: 3px #fedc01 solid !important;
+}
+
+.navbar a {
+    color: #fedc01 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    display: block;
+}
+
+.cauthu .so-ao img {
+    height: 55px;
+}
+
+.cauthu .ten {
+    font-family: 'Segoe UI';
+    font-weight: 700 !important;
+    font-size: 24px;
+    color: #fedc01;
+}
+
+.text-white {
+    color: #f7f5f5!important;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+.cauthu .cauthu-cell {
+    border: 1px solid #f7f5f5;
+    background-image: url(../images/bg-cauthu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cauthu .cauthu-info {
+    display: block;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    background-color: #FFCA05;
+    padding: 1.25rem 0;
+    position: relative;
+    border-top: 10px solid #F9A51A;
+}
+
+.footer .menu {
+    display: block;
+    text-align: right;
+}
+
+.footer .menu ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.footer .menu ul>li {
+    display: inline-block;
+}
+
+.footer .menu ul>li>a {
+    font-size: 20pt;
+    padding: 0.25rem 0;
+    color: #0c306c;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Segoe UI';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-brand {
+    color: #0c306c !important;
+    font-size: 14pt;
+}

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PBOS FC</title>
+    <!-- Import Boostrap css, js, font awesome here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="navbar">
+        <nav class="navbar navbar-expand-sm navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#" title="FC PBOS">
+                    <img src="./img/FC PBOS.png" height="50">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-top">
+                    <i class="icofont-navigation-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đội Hình</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Danh Hiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                    </ul>
+                    <a href="#" title="Tìm kiếm" class="nav-link ml-auto" data-toggle="modal"
+                        data-target="#searchBoxModal">
+                        <img src="https://hanoifc.com.vn/public/client/images/icon/i9.png?v=1.0.0" alt="Tìm kiếm">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Carousel -->
+    <div class="container">
+        <div id="myCarousel" class="carousel slide">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/1.jpg" alt="Los Angeles" width="1100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/2.jpg" alt="Chicago" width="1100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/3.jpg" alt="New York" width="1100">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+
+            // Enable Carousel Controls
+            $(".carousel-control-prev").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".carousel-control-next").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+        });
+    </script>
+    <!--Đội hình-->
+    <div class="cauthu d-block">
+        <div class="container">
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/2.png?v=1.0.0"
+                                            alt="2" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Mai Thế Việt
+                                        </span><br> <span class="text-white vi-tri">Thủ môn</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Bùi Tấn Trường" src="./img/viet.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 19/02/1986 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 188 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 88 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Nghệ An </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/3.png?v=1.0.0"
+                                            alt="3" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Việt Hoàng
+                                        </span><br> <span class="text-white vi-tri">Thủ môn</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Nguyễn Văn Công" src="./img/viethoang.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 13/01/2001 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 177 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 90 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hưng Yên </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/3.png?v=1.0.0"
+                                            alt="3" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Vũ Hữu Mạnh
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Đoàn Văn Hậu" src="./img/hmanh.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 19/04/1999 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 186 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 82 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hưng Yên </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/6.png?v=1.0.0"
+                                            alt="6" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Văn Hiếu
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Trần Văn Kiên" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 13/05/1996 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 168 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 64 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hưng Yên </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/7.png?v=1.0.0"
+                                            alt="7" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Đặng Trần Trung
+                                            Sơn
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Nguyễn Thành Chung" src="./img/son.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 08/09/1997 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 180 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 70 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Nghệ An </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/2.png?v=1.0.0"
+                                            alt="2" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/0.png?v=1.0.0"
+                                            alt="0" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Hữu Đức
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Đặng Văn Tới" src="./img/hduc.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 11/10/2001 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 177 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 95 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hoà Bình </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/9.png?v=1.0.0"
+                                            alt="9" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Xuân Tân
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Bùi Hoàng Việt Anh" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 01/01/1999 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 181 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 77 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Nam Định </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/6.png?v=1.0.0"
+                                            alt="6" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Chi Tùng
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Vũ Tiến Long" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 04/04/2002 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 174 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 72 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hưng Yên </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/7.png?v=1.0.0"
+                                            alt="7" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/7.png?v=1.0.0"
+                                            alt="7" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Phùng Mạnh Dũng
+                                        </span><br> <span class="text-white vi-tri">Hậu vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Đỗ Duy Mạnh" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 29/09/1996 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 180 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 70 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hà Nội </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/4.png?v=1.0.0"
+                                            alt="4" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Trần Anh Quân
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Vũ Minh Tuấn" src="./img/quan.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 19/09/1990 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 174 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 66 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Lào Cai </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/8.png?v=1.0.0"
+                                            alt="8" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Minh Hoàng
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Đậu Văn Toàn" src="./img/hoangtinh.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 01/04/1997 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 170 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 68 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hưng Yên </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/0.png?v=1.0.0"
+                                            alt="0" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Phan Văn Quyền
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Nguyễn Văn Quyết" src="./img/quyen.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 01/07/1991 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 172 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 65 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hà Nội </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Trần Văn Mạnh
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Phạm Thành Lương" src="./img/manhtre.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 10/09/1988 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 166 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 62 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hải Phòng </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/1.png?v=1.0.0"
+                                            alt="1" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/7.png?v=1.0.0"
+                                            alt="7" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Bùi Hoàng Lâm
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Phạm Đức Huy" src="./img/lam.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 20/01/1995 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 172 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 69 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hưng Yên </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/8.png?v=1.0.0"
+                                            alt="8" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Tiến Hải
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Nguyễn Hai Long" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 27/08/2000 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 168 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 63 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hà Nội </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/4.png?v=1.0.0"
+                                            alt="4" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Nguyễn Văn Kỳ
+                                        </span><br> <span class="text-white vi-tri">Tiền vệ</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Nguyễn Quang Hải" src="./img/ky.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 12/04/1997 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 168 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 65 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hà Nội </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/9.png?v=1.0.0"
+                                            alt="9" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Trần Đại Phúc
+                                        </span><br> <span class="text-white vi-tri">Tiền đạo</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Phạm Tuấn Hải" src="./img/phuc.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 19/05/1998 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 172 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 68 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Bắc Ninh </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/2.png?v=1.0.0"
+                                            alt="2" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/6.png?v=1.0.0"
+                                            alt="6" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Lê Phú Hoàng
+                                        </span><br> <span class="text-white vi-tri">Tiền đạo</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Josip Ivančić" src="./img/phuhoang.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 29/03/1993 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 192 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 88 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Thanh Hoá </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/4.png?v=1.0.0"
+                                            alt="4" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/6.png?v=1.0.0"
+                                            alt="6" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Trần Bá Tú
+                                        </span><br> <span class="text-white vi-tri">Tiền đạo</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Lê Xuân Tú" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 06/09/1999 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 180 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 70 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hà Nội </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cauthu-row">
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/2.png?v=1.0.0"
+                                            alt="2" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/9.png?v=1.0.0"
+                                            alt="9" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Ngô Doãn Luân
+                                        </span><br> <span class="text-white vi-tri">Tiền đạo</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Nguyễn Văn Tùng" src="https://hanoifc.com.vn/upload/tantruongfake.png?v=1.0.0"
+                        class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 02/06/2001 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 180 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 65 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hải Phòng </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 px-0 cauthu-cell">
+                    <div class="d-block position-relative mb-md-0 mb-3">
+                        <div class="p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-inline-block align-middle so-ao"> <img
+                                            src="https://hanoifc.com.vn/public/client/images/number/2.png?v=1.0.0"
+                                            alt="2" class="w-auto d-inline" style="padding: 0 1px;"><img
+                                            src="https://hanoifc.com.vn/public/client/images/number/7.png?v=1.0.0"
+                                            alt="9" class="w-auto d-inline" style="padding: 0 1px;"> </div>
+                                    <div class="d-inline-block align-middle ml-2"> <span
+                                            class="ten text-uppercase text-yellow font-weight-light"> Lê Đức Anh
+                                        </span><br> <span class="text-white vi-tri">Tiền đạo</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <img alt="Vladimir Silađi" src="./img/ducanh.png" class="d-block mx-auto">
+                    <div class="cauthu-info">
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Ngày sinh </div>
+                            <div class="col-6 text-right"> 17/07/2002 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Chiều cao </div>
+                            <div class="col-6 text-right"> 164 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Cân nặng </div>
+                            <div class="col-6 text-right"> 60 </div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center text-uppercase">
+                            <div class="col-6"> Quê quán </div>
+                            <div class="col-6 text-right"> Hà Nội </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="d-block mb-3 post-body">
+                <div class="row align-items-center">
+                    <div class="col-sm-5 col-12"> <a href="https://hanoifc.com.vn/" title="HÀ NỘI FC"
+                            class="d-md-inline-block d-none"> <img src="./img/logo-short.png" alt="HÀ NỘI FC"> </a>
+                        <div
+                            class="d-md-inline-block ml-md-5 d-block mb-md-0 mb-3 text-md-left text-center footer-social">
+                            <a href="#" title="Facebook" rel="nofollow" target="_blank" class="text-decoration-none">
+                                <img src="https://hanoifc.com.vn/public/client/images/icon/i3.png?v=1.0.0"
+                                    alt="HÀ NỘI FC"> </a>
+                            <a href="" title="Instagram" rel="nofollow" target="_blank"
+                                class="text-decoration-none ml-lg-3">
+                                <img src="https://hanoifc.com.vn/public/client/images/icon/i4.png?v=1.0.0"
+                                    alt="HÀ NỘI FC"> </a>
+                            <a href="#" title="Youtube" rel="nofollow" target="_blank"
+                                class="text-decoration-none ml-lg-3">
+                                <img src="https://hanoifc.com.vn/public/client/images/icon/i5.png?v=1.0.0"
+                                    alt="HÀ NỘI FC"> </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-12" id="contact-form">
+                        <div class="menu">
+                            <ul>
+                                <li> <a href="https://hanoifc.com.vn/" title="Trang chủ">Trang chủ |</a> </li>
+                                <li> <a href="https://hanoifc.com.vn/gioi-thieu" title="Giới thiệu">Giới thiệu |</a>
+                                </li>
+                                <li> <a href="https://hanoifc.com.vn/doi-hinh" title="Đội hình">Đội hình |</a> </li>
+                                <li> <a href="https://hanoifc.com.vn/lich-thi-dau" title="Thi đấu">Thi đấu</a> </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="d-block mb-1 text-brand text-md-right text-sm text-left"> © Copyright 2022 PBOS
+                            Football Club</div>
+                        <div class="d-block text-brand text-md-right text-sm text-left"> All rights reserved. Developed
+                            and maintained by PBOS FOOTBALL CLUB. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
