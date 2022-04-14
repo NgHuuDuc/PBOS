@@ -1,125 +1,210 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #0c306c;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c306c;
 }
 
 #navbar {
-    display: block;
-    width: 100%;
-    background-color: #0c306c;
-    border-bottom: 5px solid #FFCA05;
+  display: block;
+  width: 100%;
+  background-color: #0c306c;
+  border-bottom: 5px solid #ffca05;
 }
 
-/* .navbar{
-    background-color: #0c306c !important;
-} */
+
 
 .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
 
 .navbar-custom {
-    padding: 0;
-    margin-bottom: 0;
-    border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
 }
 
 .icofont-navigation-menu:before {
-    content: "\efa2";
+  content: "\efa2";
 }
 
-.navbar::after{
-    border-bottom: 3px #fedc01 solid !important;
+.navbar::after {
+  border-bottom: 3px #f8f5f5 solid !important;
 }
 
 .navbar a {
-    color: #fedc01 !important;
-    font-weight: bold;
-    text-transform: uppercase;
+  color: #fedc01 !important;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 main {
-    display: block;
+  display: block;
+}
+
+.container h2 {
+  color: #fedc01 !important;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  margin: 30px 0;
 }
 
 .cauthu .so-ao img {
-    height: 55px;
+  height: 55px;
+}
+
+#info{
+    margin-top: 1rem;
+}
+
+#info h2{
+    color: #fedc01 !important;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+#info p{
+    font-size: 20px;
 }
 
 .cauthu .ten {
-    font-family: 'Segoe UI';
-    font-weight: 700 !important;
-    font-size: 24px;
-    color: #fedc01;
+  font-family: "Segoe UI";
+  font-weight: 700 !important;
+  font-size: 24px;
+  color: #fedc01;
 }
 
 .text-white {
-    color: #f7f5f5!important;
-    font-family: 'Segoe UI';
-    text-transform: uppercase;
+  color: #f7f5f5 !important;
+  font-family: "Segoe UI";
+  text-transform: uppercase;
 }
 
 .cauthu .cauthu-cell {
-    border: 1px solid #f7f5f5;
-    background-image: url(../images/bg-cauthu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  border: 1px solid #f7f5f5;
+  background-image: url(../images/bg-cauthu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cauthu .cauthu-info {
-    display: block;
-    color: #fff;
-    width: 100%;
-    padding: 1rem;
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
 }
+
+
 
 .footer {
-    display: block;
-    width: 100%;
-    background-color: #FFCA05;
-    padding: 1.25rem 0;
-    position: relative;
-    border-top: 10px solid #F9A51A;
+  display: block;
+  width: 100%;
+  background-color: #ffca05;
+  padding: 1.25rem 0;
+  position: relative;
+  border-top: 10px solid #f9a51a;
 }
 
+
 .footer .menu {
-    display: block;
-    text-align: right;
+  display: block;
+  text-align: right;
 }
 
 .footer .menu ul {
-    margin: 0;
-    padding: 0;
-    display: block;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
-.footer .menu ul>li {
-    display: inline-block;
+.footer .menu ul > li {
+  display: inline-block;
 }
 
-.footer .menu ul>li>a {
-    font-size: 20pt;
-    padding: 0.25rem 0;
-    color: #0c306c;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-family: 'Segoe UI';
-    display: inline-block;
-    vertical-align: middle;
+.footer .menu ul > li > a {
+  font-size: 20pt;
+  padding: 0.25rem 0;
+  color: #0c306c;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Segoe UI";
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .text-brand {
-    color: #0c306c !important;
-    font-size: 14pt;
+  color: #0c306c !important;
+  font-size: 14pt;
 }
+
+.aboutus-cover .cap .wrap {
+  display: block;
+  position: relative;
+  height: 5px;
+  background-color: #fff;
+  border-top: 5px solid #ffca05;
+  width: 100%;
+}
+
+.aboutus-cover .cap .wrap .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.aboutus-content {
+  display: block;
+  padding: 4rem 2rem 0 2rem;
+  background-color: #d4d4d4;
+}
+
+.post-body {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.doihinh ul > li > a, .doibong ul>li>a {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    font-weight: 700 !important;
+    margin: 0 1rem;
+    font-family: 'Segoe UI';
+    font-size: 18pt;
+    text-transform: uppercase;
+}   
+
+.doihinh, .doibong {
+    background: #ffca05;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.doihinh ul > li, .doibong ul>li {
+    list-style: none;
+    display: inline-block;
